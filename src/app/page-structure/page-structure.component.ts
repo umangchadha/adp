@@ -8,7 +8,7 @@ import { MessengerService } from '../services/messenger/messenger.service';
 })
 export class PageStructureComponent implements OnInit {
 
-  constructor(private msg:MessengerService) { }
+  constructor(public msg:MessengerService) { }
 
   ngOnInit() {
   }
