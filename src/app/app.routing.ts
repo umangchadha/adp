@@ -7,7 +7,7 @@ const appRoutes: Routes = [
   { path: 'films', component: FilmGridComponent },
 
   // otherwise redirect to home
-    { path: '**', redirectTo: 'home' }
+    { path: '**', redirectTo: '/home' }
 ];
 
-export const routing = RouterModule.forRoot(appRoutes);
+export const routing = RouterModule.forRoot(appRoutes, {useHash: true});
