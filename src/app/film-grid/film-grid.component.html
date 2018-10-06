@@ -1,9 +1,7 @@
-<div class="grid-container">
+
   <app-error-card *ngIf="errors"></app-error-card>
-  
-  <mat-grid-list cols="4" >
-    <mat-grid-tile *ngFor="let card of cards?.films " >
+  <div fxLayout="row" fxLayoutGap=20px fxLayout.lt-md="column" > 
+    <div *ngFor="let card of cards?.films "  >
         <app-film-card [url]="card"> </app-film-card>
-    </mat-grid-tile>
-  </mat-grid-list>
+  </div>
 </div>
